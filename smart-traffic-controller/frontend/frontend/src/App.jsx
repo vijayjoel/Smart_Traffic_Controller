@@ -9,7 +9,8 @@ function App() {
   const [simulationDone, setSimulationDone] = useState(false);
 
   const sendData = async () => {
-    const res = await fetch("http://localhost:3000/calculate-time", {
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+    const res = await fetch(`${API_URL}/calculate-time`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ vehicles }),
