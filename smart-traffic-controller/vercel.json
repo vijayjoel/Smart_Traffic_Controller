@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd smart-traffic-controller/frontend/frontend && npm install && npm run build",
+  "outputDirectory": "smart-traffic-controller/frontend/frontend/dist",
+  "installCommand": "cd smart-traffic-controller/frontend/frontend && npm install"
+}
